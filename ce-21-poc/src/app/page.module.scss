@@ -1,0 +1,67 @@
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #6B5B95;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.artwork {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.artwork:hover {
+  transform: scale(1.05);
+}
+
+.artwork img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.artwork h3 {
+  margin-top: 1rem;
+  color: #FF6F61;
+}
+
+.footer button {
+  background-color: #FF6F61;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #E85C50;
+}
+
+.footer div{
+  text-align: left;
+}
