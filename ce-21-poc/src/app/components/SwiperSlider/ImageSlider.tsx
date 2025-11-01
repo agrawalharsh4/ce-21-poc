@@ -40,7 +40,7 @@ const ImageSlider: React.FC<DemoSliderProps> = ({ data }) => {
             loop={true}
             modules={[Autoplay, Navigation, Pagination]}
           >
-            {data.map(({ id, image, tagline, title, buttons }) => (
+            {data.map(({ id, image, tagline, title }) => (
               <SwiperSlide key={id}>
                 <div
                   className="h-full w-full absolute left-0 top-0"

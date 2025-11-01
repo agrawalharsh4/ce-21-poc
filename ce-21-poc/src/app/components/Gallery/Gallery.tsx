@@ -3,7 +3,7 @@ import styles from "./Gallery.module.scss";
 const Gallery: React.FC = ({ }) => {
   return (
     <section className={styles.gallery}>
-        <h1 className="w-full text-4xl font-bold dark:text-white">Student's Creation</h1>
+        <h1 className="w-full text-4xl font-bold dark:text-white">Student&apos;s Creations</h1>
         <div className={styles.artwork}>
           <Image width={320} height={480} src="/images/1.jpg" alt="Art 1" />
           <h3>Pen Art</h3>
