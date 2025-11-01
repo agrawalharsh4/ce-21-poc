@@ -1,7 +1,7 @@
 "use client"; // <===== REQUIRED
 
 import React from "react";
-
+import Image from "next/image";
 // Swiper components, modules and styles
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,10 +44,15 @@ const ImageSlider: React.FC<DemoSliderProps> = ({ data }) => {
               <SwiperSlide key={id}>
                 <div
                   className="h-full w-full absolute left-0 top-0"
-                  style={{
-                    background: `url(${image}) center center / cover scroll no-repeat`,
-                  }}
-                ></div>
+                  // style={{
+                  //   background: `url(${image}) center center / cover scroll no-repeat`,
+                  // }}
+                >
+                   <Image width={0} // Set to 0 when using style for width
+                          height={0} // Set to 0 when using style for height
+                          sizes="100vw"
+                    style={{ width: '100%', height: 'auto' }} src={image} alt="Art 2" />
+                </div>
                 <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
                 <div className="relative z-10 h-full flex items-center justify-center">
                   <div className="text-center">
