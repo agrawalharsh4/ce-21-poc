@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -46,6 +48,7 @@ body {
 }
 
 .gallery {
+  @apply flex min-h-screen flex-col items-center justify-between;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -87,4 +90,14 @@ body {
 
 .footer button:hover {
   background-color: #E85C50;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  transform: scale(2);
+  transform-origin: center;
 }

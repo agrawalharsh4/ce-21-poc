@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.imageSection {
+  flex: 1;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+.textSection {
+  flex: 1;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}

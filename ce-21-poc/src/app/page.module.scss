@@ -17,37 +17,6 @@
   font-size: 1.2rem;
   color: #333;
 }
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 3rem 0;
-  flex-wrap: wrap;
-}
-
-.artwork {
-  background: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.artwork:hover {
-  transform: scale(1.05);
-}
-
-.artwork img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.artwork h3 {
-  margin-top: 1rem;
-  color: #FF6F61;
-}
-
 .footer button {
   background-color: #FF6F61;
   color: white;
