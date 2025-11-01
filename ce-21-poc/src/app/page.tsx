@@ -19,6 +19,7 @@ export default function Home() {
         <Gallery></Gallery>
         <ImageTitleText imageUrl="/images/d.jpg" title="Meet the Artist" text={ArtistDescription}></ImageTitleText>
       </main>
+      <ImageTitleText imageUrl="/images/d.jpg" title="Meet the Artist" text="Loreum Epsum for Now"></ImageTitleText>
       <footer className={styles.footer}>
         {/* <button>More Content Coming Soon!!!</button> */}
         <div>
